@@ -1,0 +1,181 @@
+// 全局字体设置
+body {
+  font-family: 'Inter', '思源黑体', 'PingFang SC', sans-serif;
+  background-color: #F8FAFC;
+}
+
+// 视图切换器激活状态
+.view-switcher-active {
+  background-color: #2563EB;
+  color: white;
+}
+
+// 人员导航激活状态
+.persona-nav-active {
+  background-color: #EFF6FF;
+}
+
+// 上下文标签激活状态
+.context-tag-active {
+  background-color: #DBEAFE;
+  color: #1E40AF;
+  border-color: #3B82F6;
+  font-weight: 600;
+}
+
+// 图表容器
+.chart-container {
+  position: relative;
+  height: 280px;
+  max-height: 40vh;
+  width: 100%;
+  max-width: 450px;
+  margin: 1rem auto;
+}
+
+// 洞察标签激活状态
+.insight-tab-active {
+  border-color: #3B82F6;
+  color: #2563EB;
+  background-color: #EFF6FF;
+}
+
+// 样式按钮激活状态
+.style-btn-active {
+  background-color: #2563EB;
+  color: white;
+  border-color: #2563EB;
+}
+
+// 关系类型按钮激活状态
+.relationship-type-btn-active {
+  background-color: #2563EB;
+  color: white;
+  border-color: #2563EB;
+}
+
+// 详情元素样式
+details > summary {
+  list-style: none;
+  
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+details[open] > summary svg.expand-icon {
+  transform: rotate(90deg);
+}
+
+details {
+  .expand-text {
+    display: inline;
+  }
+  
+  .collapse-text {
+    display: none;
+  }
+  
+  &[open] {
+    .expand-text {
+      display: none;
+    }
+    
+    .collapse-text {
+      display: inline;
+    }
+  }
+}
+
+// 动画
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in-subtle {
+  from {
+    opacity: 0;
+    transform: scaleY(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.animate-fade-in-subtle {
+  animation: fade-in-subtle 0.3s ease-out forwards;
+  transform-origin: top;
+}
+
+// 应用模式类
+#app {
+  &.analysis-mode > aside {
+    display: none;
+  }
+  
+  &.analysis-mode > main {
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+  }
+}
+
+// 分析滚动区域
+.analysis-scroll-area {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+    border: 2px solid #f1f5f9;
+    
+    &:hover {
+      background-color: #94a3b8;
+    }
+  }
+}
+
+// 分析导航项激活状态
+.analysis-nav-item-active {
+  background-color: #2563EB;
+  color: white;
+  
+  .text-slate-500 {
+    color: #BFDBFE;
+  }
+  
+  .text-slate-700 {
+    color: white;
+  }
+}
+
+// Toast容器
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 50;
+  
+  & > * + * {
+    margin-top: 8px;
+  }
+}
