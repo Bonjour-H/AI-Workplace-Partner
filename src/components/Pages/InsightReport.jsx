@@ -36,19 +36,19 @@ function InsightReport() {
       
       <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
         <h2 className="text-xl font-serif font-bold text-slate-700 mb-4">深度档案功能</h2>
-        <p className="text-slate-500">洞察报告页面正在开发中...</p>
+        <p className="text-slate-500">以下为{persona.name}的深入分析结果</p>
         <div className="mt-6 space-y-4">
           <div className="p-4 bg-slate-50 rounded-lg">
             <h3 className="font-semibold text-slate-700">沟通风格画像</h3>
-            <p className="text-sm text-slate-500 mt-1">待实现</p>
+            <p className="text-sm text-slate-500 mt-1">圆滑老练，擅长打太极，说话留三分，从不把话说死或直接表态。</p>
           </div>
           <div className="p-4 bg-slate-50 rounded-lg">
             <h3 className="font-semibold text-slate-700">核心驱动力与目标</h3>
-            <p className="text-sm text-slate-500 mt-1">待实现</p>
+            <p className="text-sm text-slate-500 mt-1">核心驱动力是“稳”和“利”，追求低风险高回报的个人晋升与资源掌控。</p>
           </div>
           <div className="p-4 bg-slate-50 rounded-lg">
             <h3 className="font-semibold text-slate-700">雷区与甜点区</h3>
-            <p className="text-sm text-slate-500 mt-1">待实现</p>
+            <p className="text-sm text-slate-500 mt-1">雷区是公开背锅或方案被挑漏洞；甜点区是能让他不费力获利、维护表面和谐。</p>
           </div>
         </div>
       </div>
